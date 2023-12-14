@@ -1,1 +1,1 @@
-be tk2blog
+fe tk2-blog
