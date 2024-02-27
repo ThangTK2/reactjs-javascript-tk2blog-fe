@@ -14,13 +14,13 @@ const Navbar = () => {
       <div className="links" style={{}}>
         <NavLink
           to={"/"}
-          style={({ isActive }) => isActive ? activeNavbar : {}} //isActive do thằng NavLink hỗ trợ
+          style={({ isActive }) => isActive ? activeNavbar : {}}
         >
           Home
         </NavLink>
         <NavLink
           to={"/create"}
-          style={({ isActive }) => isActive ? activeNavbar : {}} //{}: cái ni kh đc định nghĩa
+          style={({ isActive }) => isActive ? activeNavbar : {}}
         >
           New Blog
         </NavLink>

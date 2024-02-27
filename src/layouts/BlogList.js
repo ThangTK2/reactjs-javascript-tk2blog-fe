@@ -7,13 +7,10 @@ const BlogList = (props) => {
 
   //SEARCH
   const searchValueBlog = useMemo(() => {
-    if (!search) return blogs;  //không rỗng
+    if (!search) return blogs; 
     return blogs.filter(
       item => item.title.toUpperCase().indexOf(search.toUpperCase()) !== -1 
     );
-    //toUpperCase: nếu tìm kiếm bằng chữ hoa cũng vẫn ra 
-    //indexOf để tìm kiếm vị trí đầu tiên của chuỗi search. Nếu không tìm thấy, kết quả sẽ là -1.
-    //!== -1: đảm bảo rằng có sự trùng khớp
   }, [search])
 
   return (

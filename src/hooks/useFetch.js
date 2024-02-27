@@ -1,3 +1,4 @@
+// file này là custom lại hook
 import { useEffect, useState } from "react"
 
 const useFetch = (url) => {
@@ -24,9 +25,6 @@ const useFetch = (url) => {
       fetchData()  // gọi lại function để nó thực thi
     // }
   }, [])
-
-  
-  
 
   return { blogs, isLoading, isError }
 }
